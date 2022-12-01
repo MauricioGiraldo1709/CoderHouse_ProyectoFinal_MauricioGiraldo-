@@ -1,0 +1,84 @@
+/* ------------------------------------------------------------------------ */
+/* ----------------------------CSS DE TOUR.HTML---------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.maintour{
+    background-image: url(../img/aaa.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    p{
+        color: white;
+        text-align: justify;
+        padding-top: 15px;
+        
+    }
+    h1{
+        color: white;
+        text-align: justify;
+        padding-top: 15px;
+    }
+    #coldplay_tour{
+        border-radius: 15px;
+        width: 100%;
+        transition: box-shadow 1.5s ;
+        &:hover{
+            box-shadow:  15px 15px 30px #999999,
+            -15px -15px 30px #ffffff;;
+        }
+    }
+    .secttour{
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .secttour_divimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .secttour_divh1{
+        margin-top: 25px;
+    }
+
+    .secttour_divp{
+        margin-bottom: 55px;
+    }
+
+    .tablita{
+        color: white;
+        border: 1px solid white;
+        text-align: center;
+    }
+}
+
+/* CELULARES */
+@media (min-width: 320px){
+    .p-tour{
+        font-size: 14px;
+        padding: 15px;
+    }
+    .tb-tour{
+        font-size: 14px;
+    }
+}
+/* TABLETS */
+@media (min-width: 768px){
+    .p-tour{
+        font-size: 15px;
+    }
+    .tb-tour{
+        font-size: 15px;
+    }
+}
+/* DESKTOPS */
+@media (min-width: 1024px){
+    .p-tour{
+        font-size: 16px;
+    }
+    .tb-tour{
+        font-size: 16px;
+    }
+}

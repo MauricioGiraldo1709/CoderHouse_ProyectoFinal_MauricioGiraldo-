@@ -1,0 +1,59 @@
+/* ------------------------------------------------------------------------ */
+/* ---------------------------CSS DE HISTORIA.HTML------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.mainhistoria{
+    background-image: url(../img/aaa.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    width: 100%;
+    h1{
+        color: white;
+        text-align: justify;
+        padding-top: 15px;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        padding-top: 15px;
+    }
+    .div-hist{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    .reverse{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    img{
+        border-radius: 15px;
+    }
+}
+
+.secthistoria{
+    padding: 25px;
+}
+
+
+@media (min-width: 320px){
+    .p-historia{
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px){
+    .p-historia{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px){
+    .p-historia{
+        font-size: 16px;
+    }
+}

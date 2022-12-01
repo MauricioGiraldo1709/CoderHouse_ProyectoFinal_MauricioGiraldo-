@@ -1,0 +1,365 @@
+/* ------------------------------------------------------------------------ */
+/* ---------------------------CSS DEL INDEX.HTML--------------------------- */
+/* ------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------ */
+/* ---------------------------CSS DEL INDEX.HTML--------------------------- */
+/* ------------------------------------------------------------------------ */
+
+/* MOBILE FIRST */
+#header{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(0, 12, 43);
+}
+
+#btn-menu{
+    display: none;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: auto auto auto; */
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        background-color: rgb(54, 54, 116);
+        color: white
+    }
+}
+
+.logo{
+    margin-top: 10px;
+    justify-self: center;
+}
+
+.menu{
+    justify-self: center;
+}
+
+.get-started{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+.btn2{
+    background-color: rgb(48, 87, 160);
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    width: 75px;
+    color: white;
+}
+
+ul li a{
+    font-size: 14px;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(../img/aaa.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sectmain{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.sectmain__divtext{
+    width: 350px;
+    color: white;
+    text-align: justify;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectmain__divfoto{
+    width: 300px;
+    justify-self: center;
+    margin-bottom: 15px;
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
+}
+
+  a.my-button{
+    margin-top: 20px;
+    background: linear-gradient(to right,#2223b5 ,#34197b);
+    background-color: #2223b5;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 0px 10px 2px rgba(0,0,0,0.5);
+    &:hover{
+        background: linear-gradient(to right,#5757be ,#5f548e);
+        background-color: #5757be;
+    }
+    &:active{
+        transform: scale(0.95);
+       }
+}
+   
+
+#footer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer_main{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    background-color: rgb(0, 12, 43);
+    padding: 10px;
+    color: #ffffff;
+}
+
+.container_logos{
+    display: flex;
+    img{
+        width: 35px;
+        margin: 10px;
+    }
+}
+
+/* CELULARES */
+@media (min-width: 320px) {
+    .logonav{
+        width: 130px;
+    }
+    .p_index{
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #main{
+        height: 100%;
+    }
+
+    .sectmain{
+        align-items: stretch;
+    }
+
+    .sectmain__divtext{
+        justify-content: center;
+        width: 320px;
+    }
+}
+
+
+
+/* TABLES AND IPADS */
+@media (min-width: 768px){
+
+    #header{
+        grid-template-columns: 1fr;
+    }
+    .nav{
+        grid-template-columns: auto;
+        justify-content: space-around;
+        row-gap: 15px;
+    }
+
+    .logonav{
+        width: 180px;
+    }
+    
+    .main-menu{
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .get-started{
+        margin-bottom: 10px;
+    }
+
+    ul li a{
+        font-size: 16px;
+    }
+
+    #main{
+        height: 100vh;
+    }
+
+    .sectmain{
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        display: grid;
+        align-items: stretch;
+    }
+
+    .sectmain__divtext{
+        width: 550px;
+    }
+    
+    .p_index{
+        font-size: 16px;
+    }
+
+    .sectmain__divfoto{
+        width: 450px;
+        justify-self: center;
+        margin-bottom: 15px;
+        padding-top: 20px;
+        img{
+            border-radius: 15px;
+        }
+    }
+
+
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .footer_main{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .container_logos{
+        width: 200px;
+        justify-content: space-evenly;
+        img{
+            width: 35px;
+            margin: 10px;
+        }
+    }
+
+}
+
+
+
+
+/* DESKTOPS */
+@media (min-width: 1024px){
+    #header{
+        grid-template-columns: 1fr;
+    }
+
+    header label{
+        display: none;
+    }
+    .nav{
+        grid-template-columns: auto auto auto;
+        height: 65px;
+        align-items: center;
+    }
+
+    .logonav{
+        width: 200px;
+    }
+
+    ul li a{
+        font-size: 20px;
+    }
+
+    .logo{
+        margin-top: 0;
+    }
+
+    .get-started{
+        margin-bottom: 0;
+    }
+
+    #main{
+        height: 100vh;
+    }
+
+    .sectmain{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10px;
+        display: grid;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        padding: 25px;
+    }
+
+    .sectmain__divtext{
+        width: 500px;
+        font-size: 16px;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .p_index{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .sectmain__divfoto{
+        width: 480px;
+        img{
+            border-radius: 15px;
+        }
+    }
+
+    #footer{
+        grid-template-columns: 1fr;
+    }
+    
+    .footer_main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .container_logos{
+        width: 200px;
+        justify-content: space-evenly;
+        img{
+            width: 40px;
+            margin: 15px;
+        }
+    }
+}

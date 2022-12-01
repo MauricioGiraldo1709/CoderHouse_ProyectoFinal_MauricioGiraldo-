@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------------------ */
+/* ----------------------------CSS DE CONTACTO.HTML---------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.maincontacto{
+    background-image: url(../img/aaa.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.sectcontacto{
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    h1{
+        color: #ffffff;
+        font-size: 32px;
+        padding-top: 10px;
+    }
+    p{
+        color: #ffffff;
+    }
+}
+
+.contacto__form{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.sectcontacto__divtext{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 25px;
+}
+
+.sectcontacto__divform{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.ul-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+/* CELULARES */
+@media (min-width: 320px) {
+    .logonav{
+        width: 130px;
+    }
+
+    .maincontacto{
+        height: 100%;
+    }
+
+    .sectcontacto{
+        align-items: stretch;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 768px){
+    .logonav{
+        width: 180px;
+    }
+
+    .maincontacto{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* DESKTOPS */
+@media (min-width: 1024px){
+    .logonav{
+        width: 200px;
+    }
+
+    .maincontacto{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
